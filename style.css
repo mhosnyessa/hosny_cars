@@ -1,0 +1,205 @@
+html,
+body {
+    margin: 0;
+    width: 100vw;
+    padding: 0px;
+}
+
+#header {
+    font-family: Lato, Corbel, "‘Lucida Grande’", "‘Lucida Sans Unicode’", "‘DejaVu Sans’", "‘Bitstream Vera Sans’", "‘Liberation Sans’", Verdana, "‘Verdana Ref’", sans-serif;
+    font-size: 16px;
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    /* background-color: white; */
+    padding: 0 32px 0;
+}
+
+#header h1:hover {
+    filter: blur(3px);
+    filter: grayscale(1);
+    filter: saturate(2.2);
+}
+
+#header h1 {
+    color: rgb(63, 65, 97);
+    height: 80%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #554;
+    cursor: pointer;
+}
+
+#logo {
+    height: 79px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    filter: blur(3px);
+    filter: grayscale(1);
+    filter: saturate(2.2);
+}
+
+#browse-gallery {
+    color: rgb(63, 65, 97);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #554;
+    font-size: 1.5rem;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    display: flex;
+    cursor: pointer;
+}
+
+#browse-gallery:hover {
+    filter: blur(3px);
+    filter: grayscale(1);
+    filter: saturate(4.2);
+}
+
+#carIcon {
+    height: 35px;
+    cursor: pointer;
+}
+
+#headen-header {
+    width: 35vw;
+    height: 1px;
+}
+
+.svg1 {
+    fill: #e01f1f;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.svg1:hover {
+    filter: blur(3px);
+    filter: grayscale(1);
+    filter: saturate(2.2);
+}
+
+.new-visitor-hero-img {
+    width: auto;
+    max-width: 100vw;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    position: absolute;
+    top: -80px;
+    z-index: -2;
+    height: 100vh;
+}
+
+#background {
+    max-width: 100vw;
+    position: relative;
+}
+
+#love-your-car {
+    border-radius: 20px;
+    position: absolute;
+    left: 10vh;
+    margin-top: 200px;
+    background-color: #fff;
+    padding: 12px 30px 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+#love-your-car button {
+    border: 0px;
+    background-color: #ffd900;
+    color: #053361;
+    height: 48px!important;
+    /* width: 100%!important; */
+    cursor: pointer;
+    font-family: Lato, Corbel, ‘Lucida Grande’, ‘Lucida Sans Unicode’, ‘DejaVu Sans’, ‘Bitstream Vera Sans’, ‘Liberation Sans’, Verdana, ‘Verdana Ref’, sans-serif!important;
+    line-height: 1.4;
+    box-shadow: 0px 0px 4px #554;
+}
+
+#love-your-car h1 {
+    color: #053361;
+}
+
+#see-cars-your-budget-will-love {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 12px 30px 40px;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    height: 400px;
+    position: relative;
+    top: 80vh;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    box-shadow: 1px 1px 10px #554;
+}
+
+#see-cars-your-budget-will-love button {
+    box-shadow: 0px 0px 4px #554;
+    font-size: 1.5rem;
+    border: 0px;
+    background-color: #ffd900;
+    color: #053361;
+    height: 48px!important;
+    /* width: 100%!important; */
+    cursor: pointer;
+    font-family: Lato, Corbel, ‘Lucida Grande’, ‘Lucida Sans Unicode’, ‘DejaVu Sans’, ‘Bitstream Vera Sans’, ‘Liberation Sans’, Verdana, ‘Verdana Ref’, sans-serif!important;
+    line-height: 1.4;
+}
+
+
+/* #see-cars-your-budget-will-love img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 50%;
+    height: auto;
+} */
+
+#insidecar {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    top: 70vh;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#insidecar img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 50%;
+    height: auto;
+}
+
+#insidecar div {
+    background-color: navy;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    padding-top: 200px;
+}
