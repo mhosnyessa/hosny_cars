@@ -1,0 +1,408 @@
+[class*="col-"] {
+    float: left;
+}
+
+* {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-image: url("https://carfanaticsblog.com/wp-content/uploads/2019/04/takahiro-taguchi-643000-unsplash-2-1170x780.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    overflow: hidden;
+}
+
+
+/*mobile here*/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+#logo {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav img {
+    display: inline;
+    border-radius: 50%;
+    /* margin: auto; */
+}
+
+.nav img.heart {
+    border-radius: 0px;
+}
+
+.nav img#logo {
+    border-radius: 9px;
+}
+
+.nav {
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav * {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+.nav {
+    height: 10vh;
+    border-bottom: 2px solid tomato;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav p {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 9px 5pc #441;
+}
+
+.nav-bar {
+    background-color: #333;
+}
+
+.mob {
+    display: none;
+}
+
+
+/*monbile*/
+
+.register-div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-flow: column;
+    padding: 12px;
+    height: 500px;
+    background-color: rgba(238, 238, 238, 0.486);
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px #445;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    background: #f1f1f1;
+    background-color: #7a7a7a;
+    border: 1px black solid;
+    box-shadow: 0px 0px 20px black;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    font-size: 1.5em;
+    background-color: #ddd;
+    background-color: #7a7a7a;
+    border: 1px black solid;
+    box-shadow: 0px 0px 20px black;
+    outline: none;
+}
+
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* Set a style for the submit button */
+
+.registerbtn {
+    background-color: rgb(243, 243, 62);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    background-color: #7a7a7a;
+    border: 1px black solid;
+    box-shadow: 0px 0px 20px black;
+    text-align: center;
+    display: none;
+}
+
+.right-div-register {
+    background-color: rgb(255, 121, 255);
+}
+
+.left-div-register button {
+    display: none;
+    width: 60%;
+    padding: 5px;
+    margin-top: 50px;
+    height: 50px;
+    background-color: rgb(243, 243, 62);
+}
+
+.left-div-register {
+    background-color: blue;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 3em;
+}
+
+#gender {
+    width: 70%;
+    height: 30px;
+    color: blanchedalmond;
+    background-color: #333;
+}
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    /*  For tablets: */
+    .nav {
+        height: 10vh;
+    }
+    #gender {
+        width: 70%;
+        height: 30px;
+        color: blanchedalmond;
+        background-color: #333;
+    }
+    .col-s-0 {
+        width: 0%;
+    }
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .register-div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-flow: row;
+        height: auto;
+        /* background-color: rgba(238, 238, 238, 0.486); */
+        margin-top: 50px;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px #445;
+    }
+    /* Full-width input fields */
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=password] {
+        width: 95%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        color: #fff;
+        font-size: 1.5em;
+        background: #f1f1f1;
+        background-color: #7a7a7a;
+        border: 1px black solid;
+        box-shadow: 0px 0px 20px black;
+    }
+    input[type=text]:focus,
+    input[type=password]:focus {
+        font-size: 1.5em;
+        background-color: #ddd;
+        background-color: #7a7a7a;
+        border: 1px black solid;
+        box-shadow: 0px 0px 20px black;
+        outline: none;
+    }
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    /* Set a style for the submit button */
+    .registerbtn {
+        background-color: rgb(243, 243, 62);
+        color: rgb(27, 23, 23);
+        font-size: xx-large;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 95.99%;
+        opacity: 0.9;
+    }
+    .registerbtn:hover {
+        opacity: 1;
+    }
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+        background-color: #7a7a7a;
+        border: 1px black solid;
+        box-shadow: 0px 0px 20px black;
+        text-align: center;
+        display: none;
+    }
+    .right-div-register {
+        background-color: rgb(255, 121, 255);
+    }
+    .left-div-register button {
+        display: none;
+        width: 60%;
+        padding: 5px;
+        margin-top: 50px;
+        height: 50px;
+        background-color: rgb(243, 243, 62);
+    }
+    .left-div-register {
+        background-color: blue;
+        color: #fff;
+        font-size: 1.5rem;
+        padding-top: 3em;
+    }
+    .mob {
+        display: block;
+        /* justify-content: space-around; */
+        /* padding-left: 50px; */
+    }
+    .nav {
+        justify-content: space-around;
+        padding-left: 50px;
+        height: 10vh;
+        /* border-bottom: 2px solid tomato; */
+        border-bottom: none;
+        padding-top: none;
+        padding-bottom: none;
+    }
+    #gender {
+        width: 70%;
+        height: 30px;
+        color: blanchedalmond;
+        background-color: #333;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

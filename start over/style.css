@@ -1,0 +1,436 @@
+[class*="col-"] {
+    float: left;
+}
+
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* body {
+    padding-top: 5px;
+} */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    overflow: hidden;
+}
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+#logo {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav img {
+    display: inline;
+    border-radius: 50%;
+    /* margin: auto; */
+}
+
+.nav img.heart {
+    border-radius: 0px;
+}
+
+.nav img#logo {
+    border-radius: 9px;
+}
+
+.nav {
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav * {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+.nav {
+    height: 10vh;
+    border-bottom: 2px solid tomato;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav p {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 9px 5pc #441;
+}
+
+.nav-bar {
+    background-color: #333;
+}
+
+.mob {
+    display: none;
+}
+
+#showcase div button {
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    padding: 1.35em 2.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #445;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(212, 212, 51);
+}
+
+#showcase div button:hover {
+    color: #000000;
+    background-color: rgb(226, 226, 16);
+}
+
+#showcase div p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #441;
+    padding: 50px 0px;
+}
+
+#showcase div {
+    margin: auto;
+    /* border: 1px rgb(90, 52, 52) solid; */
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background-image: url("mobcar.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#content {
+    /* display: flex; */
+    /* align-items: stretch; */
+    margin-top: 60px;
+}
+
+#content div {
+    box-sizing: border-box;
+    border: 5px #222;
+    background-color: #cecece48;
+}
+
+#showcase div button:hover {
+    color: #000000;
+    background-color: rgb(226, 226, 16);
+}
+
+#content button {
+    width: 100%;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.35em 2.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #445;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(212, 212, 51);
+}
+
+#showcase div {
+    border: none !important;
+}
+
+#content h1 {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(224, 224, 222);
+}
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    body {
+        background-image: url("tabletcar.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    #showcase div button {
+        cursor: pointer;
+        width: 80%;
+        display: inline-block;
+        padding: 1.35em 2.2em;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #445;
+        text-align: center;
+        transition: all 0.2s;
+        background-color: rgb(212, 212, 51);
+    }
+    #showcase div p {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #441;
+        padding: 50px 0px;
+    }
+    #showcase div {
+        margin: auto;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mob {
+        display: none;
+    }
+    .nav {
+        height: 10vh;
+    }
+    #content {
+        /* display: flex; */
+        /* align-items: stretch; */
+        margin-top: 60px;
+    }
+    #content div {
+        box-sizing: border-box;
+        border: 5px #222;
+        background-color: #cecece48;
+    }
+    #showcase div button:hover {
+        color: #000000;
+        background-color: rgb(226, 226, 16);
+    }
+    #content button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 1.35em 2.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #445;
+        text-align: center;
+        transition: all 0.2s;
+        background-color: rgb(212, 212, 51);
+    }
+    /*  For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("../personincar.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .mob {
+        display: block;
+        /* justify-content: space-around; */
+        /* padding-left: 50px; */
+    }
+    .nav {
+        justify-content: space-around;
+        padding-left: 50px;
+        height: 10vh;
+        /* border-bottom: 2px solid tomato; */
+        border-bottom: none;
+        padding-top: none;
+        padding-bottom: none;
+    }
+    #showcase {
+        display: flex;
+    }
+    #showcase div button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 1.35em 2.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #445;
+        text-align: center;
+        transition: all 0.2s;
+        background-color: rgb(212, 212, 51);
+    }
+    #showcase div button:hover {
+        color: #000000;
+        background-color: rgb(226, 226, 16);
+    }
+    #showcase div p {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #441;
+        padding: 50px 0px;
+    }
+    #showcase div {
+        margin: auto;
+        border: 1px rgb(90, 52, 52) solid;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #content {
+        display: flex;
+        align-items: stretch;
+        margin-top: 60px;
+    }
+    #content div {
+        box-sizing: border-box;
+        border: 5px #222;
+        background-color: #cecece48;
+    }
+    #content button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 1.35em 2.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #445;
+        text-align: center;
+        transition: all 0.2s;
+        background-color: rgb(212, 212, 51);
+    }
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

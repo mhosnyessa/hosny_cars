@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="row nav-bar">
+        <div class="col-2 col-s-4 nav">
+            <img id="logo" class=" go-to-main " src="../../logo.png" alt="logo">
+            <p class="mob go-to-main go-to-main">go to main page</p>
+        </div>
+        <div class="col-2 col-s-4 nav">
+            <img src="../gallery.png" class="go-to-gallery" alt="browse gallery">
+            <p class=" go-to-gallery ">browse gallery</p>
+        </div>
+        <div class="col-2 col-s-4 nav">
+            <img src="../heart.png" class="heart " style="padding: 9px;" alt="heart">
+            <p>go to favourites</p>
+        </div>
+        <div class="col-2 col-s-6 nav">
+            <p>#SHOW_YOUR_BOW</p>
+        </div>
+        <div class="col-2 col-s-6 nav">
+            <img src="../register.png" alt="regitster">
+            <p>register now</p>
+
+        </div>
+        <div class="col-2 col-s-4 nav mob">
+            <p>with HOSNYCARS you will get the perfect car for you</p>
+        </div>
+    </div>
+    <div class="register-div col-9 ">
+        <div class="left-div-register col-6">
+            <h1>information</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sed numquam repellat, sapiente alias voluptatum labore voluptatibus tempore placeat corporis mollitia et itaque nulla cumque at impedit commodi tempora ullam, incidunt ut non.
+                Assumenda commodi ratione nemo quis ipsa adipisci.</p>
+            <button>
+                Lorem, ipsum.
+            </button>
+        </div>
+        <div class="right-div-register col-6">
+            <div class="container">
+                <form id="register_form">
+                    <h1>Register</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="f-name"><b>first name</b></label>
+                    <input type="text" placeholder="Enter first name" name="f-name" id="f-name">
+                    <br>
+                    <label for="l-name"><b>last name</b></label>
+                    <input type="text" placeholder="Enter last name" name="l-name" id="l-name">
+                    <br>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email">
+                    <br>
+                    <label for="mobile"><b>Mobile</b></label>
+                    <input type="tel" placeholder="Enter phone number" value="01" name="number" id="phoneNumber">
+                    <br>
+                    <label for="adress"><b>Adress</b></label>
+                    <input type="text" placeholder="Enter adress" name="adress" id="adress">
+                    <br>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="registerPassword">
+                    <br>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat">
+                    <label for="gender">Choose your gender</label>
+                    <br>
+                    <select name="gender" id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                    <button type="submit" class="registerbtn">Register</button>
+                </form>
+            </div>
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
