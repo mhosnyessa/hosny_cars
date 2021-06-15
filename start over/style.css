@@ -28,6 +28,11 @@
 
 /* For mobile phones: */
 
+
+/*
+    ! nav only
+    nav only*/
+
 [class*="col-"] {
     width: 100%;
 }
@@ -81,6 +86,10 @@ img {
     text-shadow: 1px 9px 5pc #441;
 }
 
+.home-word {
+    display: inline;
+}
+
 .nav-bar {
     background-color: #333;
 }
@@ -88,6 +97,11 @@ img {
 .mob {
     display: none;
 }
+
+
+/*
+    ! nav only
+    nav only*/
 
 #showcase div button {
     cursor: pointer;
@@ -228,12 +242,23 @@ body {
         justify-content: center;
         flex-direction: column;
     }
+    /*nav only*/
+    /*
+    ! nav only
+    nav only*/
     .mob {
+        display: none;
+    }
+    .home-word {
         display: none;
     }
     .nav {
         height: 10vh;
     }
+    /*
+    ! nav only
+    nav only*/
+    /*nav only*/
     #content {
         /* display: flex; */
         /* align-items: stretch; */
@@ -312,6 +337,9 @@ body {
         background-size: cover;
         background-position: top;
     }
+    /*
+    ! nav only
+    nav only*/
     .mob {
         display: block;
         /* justify-content: space-around; */
@@ -326,6 +354,13 @@ body {
         padding-top: none;
         padding-bottom: none;
     }
+    .home-word {
+        display: none;
+    }
+    /*nav only*/
+    /*
+    ! nav only
+    nav only*/
     #showcase {
         display: flex;
     }
