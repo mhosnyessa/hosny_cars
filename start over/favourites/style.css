@@ -1,6 +1,3 @@
-/* For mobile phones: */
-
-
 /* !nav */
 
 [class*="col-"] {
@@ -28,6 +25,10 @@
 
 .row {
     overflow: hidden;
+}
+
+[class*="col-"] {
+    width: 100%;
 }
 
 [class*="col-"] {
@@ -115,59 +116,6 @@ img {
 
 /* !nav */
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    text-align: center;
-}
-
-#content {
-    background-image: url("./background.jpg");
-    padding-top: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 120vh;
-    margin: auto;
-}
-
-.piece {
-    background-color: rgba(222, 184, 135, 0.671);
-    font-family: "American Typewriter", serif;
-    font-weight: lighter;
-    font-size: 1em;
-    text-align: left;
-}
-
-.piece td {
-    text-align: left;
-}
-
-.piece th {
-    font-size: 1.2em;
-}
-
-#content td,
-#content th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#content tr:nth-child(even) {
-    background-color: #f2f2f2c2;
-}
-
-#customers tr:hover {
-    background-color: rgba(221, 221, 221, 0.801);
-}
-
-.piece:nth-of-type(2) {
-    display: none;
-}
-
 @media only screen and (min-width: 600px) {
     /* tablet */
     /*nav only*/
@@ -183,19 +131,15 @@ img {
     .nav {
         height: 10vh;
     }
-    /*
-    ! nav only
-    nav only*/
-    /*nav only*/
-    .piece:nth-of-type(2) {
-        display: none;
-    }
     .mob {
         display: none;
     }
     .nav {
         height: 10vh;
     }
+    /*
+    ! nav only
+    nav only*/
     .col-s-1 {
         width: 8.33%;
     }
@@ -264,9 +208,6 @@ img {
     /*
     ! nav only
     nav only*/
-    .piece:nth-of-type(2) {
-        display: table;
-    }
     .col-1 {
         width: 8.33%;
     }
