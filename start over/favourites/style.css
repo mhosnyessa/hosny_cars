@@ -146,11 +146,11 @@ img {
 }
 
 .element .icon {
-    height: 55px;
+    height: 39px;
     float: left;
     position: relative;
-    top: 290px;
-    left: 270px;
+    top: 204px;
+    left: 170px;
 }
 
 .element p {
@@ -285,6 +285,13 @@ img {
     /*
     ! nav only
     nav only*/
+    .element .icon {
+        height: 55px;
+        float: left;
+        position: relative;
+        top: 290px;
+        left: 270px;
+    }
     #show-case {
         position: relative;
         height: 400px;
