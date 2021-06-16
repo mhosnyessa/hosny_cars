@@ -1,3 +1,6 @@
+/* For mobile phones: */
+
+
 /* !nav */
 
 [class*="col-"] {
@@ -25,10 +28,6 @@
 
 .row {
     overflow: hidden;
-}
-
-[class*="col-"] {
-    width: 100%;
 }
 
 [class*="col-"] {
@@ -116,6 +115,12 @@ img {
 
 /* !nav */
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
     /* tablet */
     /*nav only*/
@@ -131,15 +136,16 @@ img {
     .nav {
         height: 10vh;
     }
+    /*
+    ! nav only
+    nav only*/
+    /*nav only*/
     .mob {
         display: none;
     }
     .nav {
         height: 10vh;
     }
-    /*
-    ! nav only
-    nav only*/
     .col-s-1 {
         width: 8.33%;
     }
