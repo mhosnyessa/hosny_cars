@@ -115,7 +115,7 @@ img {
 #show-case {
     position: relative;
     height: 200px;
-    background-image: url("showcase.webp");
+    background-image: url("heart.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ img {
     -webkit-text-stroke-width: 1.0px;
     -webkit-text-stroke-color: rgb(51, 51, 49);
     padding: 40px 60px;
-    background-color: rgba(116, 113, 113, 0.589);
+    background-color: rgba(116, 113, 113, 0.411);
     border-radius: 3px;
     display: block;
     height: 100%;
@@ -143,6 +143,14 @@ img {
     /* border: 2px red solid; */
     padding: 10px;
     padding-top: 30px;
+}
+
+.element .icon {
+    height: 55px;
+    float: left;
+    position: relative;
+    top: 290px;
+    left: 270px;
 }
 
 .element p {
@@ -193,7 +201,7 @@ img {
     #show-case {
         position: relative;
         height: 200px;
-        background-image: url("showcase.webp");
+        background-image: url("heart.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -280,8 +288,8 @@ img {
     #show-case {
         position: relative;
         height: 400px;
-        background-image: url("showcase.webp");
         background-repeat: no-repeat;
+        background-image: url("heart.jpg");
         background-size: cover;
         background-position: center;
         background-position-y: bottom;
